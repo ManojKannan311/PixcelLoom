@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/P-logo.png') }}">
+
+    <title>
+        {% block title %}
+
+        {% endblock %}
+    </title>
+    {% include 'header.html' %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+</head>
+
+<body>
+<div id="hero">
+    <nav class="navbar navbar-expand-lg custom-bg fixed" id="navbars">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#" style="font-weight: 600px;">PIXELLOOM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse pt-2 pb-2" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#second-hero">About</a>
+                    </li>
+                   
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#services">Services</a>
+                    </li>
+                   
+                    <li class="nav-item px-3">
+                        <a class="nav-link text-white" href="#contact_form">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% block land %}
+
+    {% endblock %}
+</div>
+
+    <!-- body  content  -->
+    {% block body %}
+
+    {% endblock %}
+    <!-- END body  content  -->
+
+    {% include 'footer.html' %}
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
