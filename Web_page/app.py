@@ -11,7 +11,7 @@ app.secret_key = "test"  # Required for flash messages
 def home():
     return render_template('index.html')
 
-DATA_FILE = "C:/Users/Manoj/OneDrive/PixelLool/Web_page/CD/Coustomer.json"
+DATA_FILE = "Web_page/CD/Coustomer.json"
 
 
 
