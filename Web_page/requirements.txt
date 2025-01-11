@@ -1,4 +1,2 @@
-python-3.11.11
 flask
-Gunicorn
-pip install -r requirements.txt
+gunicorn
