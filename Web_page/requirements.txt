@@ -1,2 +1,3 @@
 flask
 gunicorn
+echo "flask\ngunicorn" > requirements.txt
